@@ -1,10 +1,10 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2017-10-25T08:02:19
+# Project created by QtCreator 2017-07-21T20:42:49
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui serialbus serialport concurrent
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +25,84 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+#        actuator.cpp \
+        Model/gulmaygeneratorconnector.cpp \
+        Model/teledynedetectorconnector.cpp\
+        Model/deltab2motordriverconnector.cpp\
+        Controller/gulmaygeneratorcontroller.cpp \
+        Controller/teledynedetectorcontroller.cpp \
+        View/gulmaygeneratorpanelview.cpp \
+        View/mainwindow.cpp \
+        View/serialportconfigdialog.cpp \
+        View/teledynedetectorpanelview.cpp\
+        View/deltab2motordriverpanelview.cpp\
+        utils.cpp \
+    Controller/deltab2motordrivercontroller.cpp
+
+
+
 
 HEADERS += \
-        mainwindow.h
+#        actuator.h \
+        Model/gulmaygeneratorconnector.h \
+        Model/teledynedetectorconnector.h \
+        Model/deltab2motordriverconnector.h\
+        Controller/gulmaygeneratorcontroller.h \
+        Controller/teledynedetectorcontroller.h \
+        View/gulmaygeneratorpanelview.h \
+        View/serialportconfigdialog.h \
+        View/teledynedetectorpanelview.h\
+        View/mainwindow.h\
+        View/deltab2motordriverpanelview.h\
+        utils.h \
+    Controller/deltab2motordrivercontroller.h \
+    Controller/dummyfile.h
+
+
+
 
 FORMS += \
-        mainwindow.ui
+        View/mainwindow.ui \
+        View/serialportconfigdialog.ui \
+        View/gulmaygeneratorpanelview.ui \
+        View/teledynedetectorpanelview.ui \
+        View/deltab2motordriverpanelview.ui
+
+RESOURCES += \
+    resources.qrc
+
+
+INCLUDEPATH += C:/VTK7/include/vtk-7.1
+INCLUDEPATH += C:/Users/Altay/Documents/Qt/Projects/SimpleScanner/Teledyne/Include
+
+#LIBS += C:/VTK7/lib/QVTKWidgetPlugin.lib
+#LIBS += C:/VTK7/lib/vtkInteractionStyle-7.1.lib
+#LIBS += C:/VTK7/lib/vtkCommonCore-7.1.lib
+#LIBS += C:/VTK7/lib/vtkRenderingOpenGL2-7.1.lib
+#LIBS += C:/VTK7/lib/vtkViewsCore-7.1.lib
+#LIBS += C:/VTK7/lib/vtkGUISupportQt-7.1.lib
+#LIBS += C:/VTK7/lib/vtkRenderingCore-7.1.lib
+#LIBS += C:/VTK7/lib/vtkInteractionImage-7.1.lib
+#LIBS += C:/VTK7/lib/vtkRenderingImage-7.1.lib
+
+
+
+LIBS += C:/VTK7/lib/QVTKWidgetPlugin.lib
+LIBS += C:/VTK7/lib/vtkInteractionStyle-7.1.lib
+LIBS += C:/VTK7/lib/vtkCommonCore-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingOpenGL2-7.1.lib
+LIBS += C:/VTK7/lib/vtkViewsCore-7.1.lib
+LIBS += C:/VTK7/lib/vtkGUISupportQt-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingCore-7.1.lib
+LIBS += C:/VTK7/lib/vtkInteractionImage-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingImage-7.1.lib
+LIBS += C:/VTK7/lib/vtktiff-7.1.lib
+LIBS += C:/VTK7/lib/vtkIOImage-7.1.lib
+LIBS += C:/VTK7/lib/vtkInteractionImage-7.1.lib
+LIBS += C:/VTK7/lib/vtkCommonExecutionModel-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingAnnotation-7.1.lib
+LIBS += C:/VTK7/lib/vtkInteractionWidgets-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingCore-7.1.lib
+LIBS += C:/VTK7/lib/vtkRenderingFreeType-7.1.lib
+LIBS += "C:/Users/Altay/Documents/Qt/Projects/SimpleScanner/Teledyne/x64/td_telnet_x64.lib"
+LIBS +="C:/Users/Altay/Documents/Qt/Projects/SimpleScanner/Teledyne/x64/td_wget_x64.lib"

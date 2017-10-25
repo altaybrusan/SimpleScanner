@@ -1,0 +1,18 @@
+#include "settingmgr.h"
+#include <QtSerialPort/QSerialPort>
+#include <QJsonArray>
+#include <QJsonDocument>
+#include <utility>
+#include <QStringListModel>
+#include <QMessageBox>
+#include <QStandardPaths>
+#include <QDebug>
+
+
+namespace SimpleScanner {
+    static auto RESOURCE_PREFIX= QStringLiteral(":/json");
+    SettingMgr::SettingMgr(QObject *parent) :
+    {
+        
+    }
+}

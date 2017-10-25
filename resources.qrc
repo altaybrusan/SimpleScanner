@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>image/actuator.png</file>
+        <file>image/detector.png</file>
+        <file>image/fire.png</file>
+        <file>image/generator.png</file>
+        <file>image/start.ico</file>
+        <file>image/stop.ico</file>
+        <file>image/apply.png</file>
+        <file>image/emergency.png</file>
+        <file>image/focalspot.png</file>
+        <file>image/longwarmup.png</file>
+        <file>image/shortwarmup.png</file>
+        <file>image/startexposure.png</file>
+        <file>image/stopexposure.png</file>
+        <file>image/check.png</file>
+        <file>image/on.png</file>
+        <file>image/gulmay.png</file>
+        <file>image/largspot.png</file>
+        <file>image/smallspot.png</file>
+        <file>image/serial.png</file>
+        <file>image/test.png</file>
+        <file>image/reset.png</file>
+        <file>image/refresh.png</file>
+        <file>image/grab.png</file>
+        <file>image/left.png</file>
+        <file>image/right.png</file>
+        <file>image/stop.png</file>
+    </qresource>
+    <qresource prefix="/json">
+        <file>settings.json</file>
+        <file>image/reset.png</file>
+    </qresource>
+</RCC>
