@@ -37,7 +37,9 @@ SOURCES += \
         View/teledynedetectorpanelview.cpp\
         View/deltab2motordriverpanelview.cpp\
         utils.cpp \
-    Controller/deltab2motordrivercontroller.cpp
+    Controller/deltab2motordrivercontroller.cpp \
+    Model/settingsmanager.cpp \
+    Controller/displaycontroller.cpp
 
 
 
@@ -56,7 +58,8 @@ HEADERS += \
         View/deltab2motordriverpanelview.h\
         utils.h \
     Controller/deltab2motordrivercontroller.h \
-    Controller/dummyfile.h
+    Model/settingsmanager.h \
+    Controller/displaycontroller.h
 
 
 

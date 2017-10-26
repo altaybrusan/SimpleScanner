@@ -166,8 +166,6 @@ namespace SimpleScanner
         connect(_timer, SIGNAL(timeout()), this, SLOT(OnControlGenerator()));
         connect(this,SIGNAL(NotifyConnectionError(const QString&)),_timer,SLOT(stop()));
 
-
-
     }
 
 
@@ -376,7 +374,7 @@ namespace SimpleScanner
     void GulmayGeneratorController::SetIntoShootingState()
     {
         _state=GENERATOR_STATE::SHOOTING;
-        _view.EnableFocalSpotChange();
+        _view.EnableFocalSpotChange();// Are you sure?!
         _view.DisableReadingExposureParameters();
         _view.DisableFocalSpotChange();
         _view.DisableWarmup();

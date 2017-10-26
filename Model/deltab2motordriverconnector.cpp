@@ -57,6 +57,8 @@ namespace SimpleScanner
     {
         if (!device)
             return;
+        if(!_settings || _settings->isEmpty())
+            return;
         if (device->state() != QModbusDevice::ConnectedState)
         {
             Connect();
@@ -69,6 +71,8 @@ namespace SimpleScanner
     {
         if (!device)
             return;
+        if( !_settings || _settings->isEmpty())
+            return;
         if (device->state() != QModbusDevice::ConnectedState)
         {
             Connect();
@@ -80,7 +84,8 @@ namespace SimpleScanner
     {
         if (!device)
             return;
-
+        if( !_settings || _settings->isEmpty())
+            return;
         if (device->state() != QModbusDevice::ConnectedState)
         {
             Connect();
@@ -94,7 +99,8 @@ namespace SimpleScanner
     {
         if (!device)
             return;
-
+        if( !_settings || _settings->isEmpty())
+            return;
         if (device->state() != QModbusDevice::ConnectedState)
         {
             Connect();
@@ -141,6 +147,9 @@ namespace SimpleScanner
 
         if (!device)
             return;
+        if( !_settings || _settings->isEmpty())
+            return;
+
         if(value>MAX_SPEED || value<MIN_SPEED)
             return;
 
@@ -220,6 +229,9 @@ namespace SimpleScanner
     {
         if (!device)
             return;
+        if( !_settings || _settings->isEmpty())
+            return;
+
         // write servo-on register on P2-30
         WriteRegister(572,1);
         emit NotifyMachineIsReady();
@@ -228,6 +240,8 @@ namespace SimpleScanner
     void DeltaB2MotorDriverConnector::ServoOff()
     {
         if (!device)
+            return;
+        if( !_settings || _settings->isEmpty())
             return;
         // write servo-on register on P2-30
         WriteRegister(572,0);
@@ -296,6 +310,10 @@ namespace SimpleScanner
 
         if (!device)
             return;
+
+        if( !_settings || _settings->isEmpty())
+            return;
+
         if(direction == 4999 || direction== 4998)
         {
             // Write on register P4-05 with address 1034
@@ -309,6 +327,8 @@ namespace SimpleScanner
     {
         if (!device)
             return;
+        if( !_settings || _settings->isEmpty())
+            return;
 
         // Write on register P4-05 with address 1034
         WriteRegister(1034,0);
@@ -317,6 +337,8 @@ namespace SimpleScanner
     void DeltaB2MotorDriverConnector::Connect()
     {
         if (!device)
+            return;
+        if( !_settings || _settings->isEmpty())
             return;
 
         // Set connection parameters.

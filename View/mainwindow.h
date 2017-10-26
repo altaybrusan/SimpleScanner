@@ -2,20 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <vtkRenderWindowInteractor.h>
-#include <vtkSmartPointer.h>
-
 
 namespace Ui {
     class MainWindow;
 }
 
 
-
 namespace SimpleScanner {
-
-
-
 
     class SerialPortConfigDialog;
     class ActuatorDialog;
@@ -32,6 +25,7 @@ namespace SimpleScanner {
     class DeltaB2MotorDriverConnector;
     class DeltaB2MotorDriverController;
 
+    class DisplayController;
 
 
     class MainWindow : public QMainWindow
@@ -71,10 +65,8 @@ namespace SimpleScanner {
         DeltaB2MotorDriverConnector& _machineConnector;
         DeltaB2MotorDriverPanelView& _machinePanelView;
         DeltaB2MotorDriverController* _machine;
-        vtkSmartPointer<vtkRenderWindowInteractor> renderWindowInteractor;
 
-
-        QString _settingsPath;
+        DisplayController* _displayController;
 
 
     };

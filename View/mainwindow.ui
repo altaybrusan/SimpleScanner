@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1020</width>
+    <width>1045</width>
     <height>857</height>
    </rect>
   </property>
@@ -171,8 +171,8 @@ color: rgb(255, 255, 255);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>871</width>
-                 <height>518</height>
+                 <width>861</width>
+                 <height>436</height>
                 </rect>
                </property>
               </widget>
@@ -198,8 +198,8 @@ color: rgb(255, 255, 255);</string>
                 <rect>
                  <x>0</x>
                  <y>0</y>
-                 <width>871</width>
-                 <height>432</height>
+                 <width>861</width>
+                 <height>332</height>
                 </rect>
                </property>
               </widget>
@@ -239,6 +239,10 @@ color: rgb(255, 255, 255);</string>
                    <width>80</width>
                    <height>80</height>
                   </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+</string>
                  </property>
                  <property name="text">
                   <string/>
@@ -324,8 +328,8 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1020</width>
-     <height>17</height>
+     <width>1045</width>
+     <height>31</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
